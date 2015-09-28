@@ -1,0 +1,8 @@
+#!/bin/sh
+ 
+if [ "$*" = "clean" ] ; then
+    make -f nbproject/Makefile-ARM.mk QMAKE= SUBPROJECTS= .clean-conf	
+else
+    make -f nbproject/Makefile-ARM.mk QMAKE= SUBPROJECTS= .build-conf
+fi
+
